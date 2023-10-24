@@ -1,0 +1,190 @@
+Data Types
+    number
+    string
+    boolean
+    null
+    undefined
+    object
+    function
+
+declaração de variável:
+var n
+let m
+
+>>Qual a diferença entre var e let?
+
+
+typeof -> devolve o tipo da variável 
+exemplo:
+var n = 200
+typeof n
+output: 'number'
+
+NodeGs:
+> var n = 200
+undefined
+> n
+200
+> typeof n
+'number'
+> n = 'google'
+'google'
+> typeof n
+'string'
+> typeof 6
+'number'
+> typeof 6.5
+'number'
+> typeof []
+'object'
+> typeof {}
+'object'
+> typeof function(){}
+'function'
+> typeof undefined
+'undefined'
+> typeof NaN
+'number'
+> typeof Infinity
+'number'
+> typeof null
+'object'
+
+
+
+aula 6 - Data types
+
+number
+string
+
+
+Converções de variáveis:
+string > number
+Number.parseInt(n)
+Number.parseFloat(n)
+ou
+Number(n) depende da decisam da linguagem
+
+number > string
+String(n)
+n.toString
+
+
+Manipulação de String
+
+NodeGs
+> nome = 'Fábio'
+'Fábio'
+> idade = 38
+38
+> nota = 5.5
+5.5
+>>>>(Template String)<<<<<
+Primeira Forma
+> 'O aluno' + nome + ' com ' + idade + ' anos tirou a nota ' + nota
+'O alunoFábio com 38 anos tirou a nota 5.5'
+
+Forma mais recente
+> `O aluno ${nome} com ${idade} anos tirou a nota ${nota}`
+'O aluno Fábio com 38 anos tirou a nota 5.5'
+
+Formatação de string
+var s = 'JavaScript'
+s.length            //número de carateres
+s.toUpperCase()     //tudo para "MAIÚSCULAS"
+s.toLowerCase()     //tudo para "minuscúlas"
+
+29.05
+video #06
+
+Formatação de Números
+n.toFixed(2)
+
+Exemplo: 
+n = 1545.5
+n.toFixed(2) -> '1545.50'
+n.toFixed(2).replace('.', ',') -> '1545,50'
+n.toLocaleString('pt-PT', {style: 'currency', currency: 'EUR'})
+
+
+>>>>>>>>>>>Operadores<<<<<<<<<<<
+
+ariteméticos
+atribuição
+relacionais
+lógicos
+ternário
+
+
+ARITEMÉTICOS
++ soma
+- subtração
+* Multiplicação
+/ Divisão
+% Resto divisão
+** potência
+
+5 + 2 = 7
+5 - 2 = 3
+5 * 2 = 10
+5 / 2 = 2.5
+5 % 2 = 1
+5 ** 2 = 25 (Potência 5^2)
+
+Operadores(parte2)
+23/10/2023
+
+Operadores ariteméticos
+>
+<
+>=
+<=
+==
+===
+!=
+
+5 == 5 -> true
+5 == '5' -> true
+5 === '5' -> false (tem o mesmo valor, mas são de tipos diferentes)
+
+Operadores lógicos
+!   Negação
+&&  conjunção
+||  disjunção
+
+Exemplos:
+    idade >= 15 && idade <= 17
+    estado == 'RJ' || estado == 'SP'
+    salario > 1500 && sexo != 'M'
+
+Precedência
+() ** / ...
+> < >= ...
+!
+&&
+||
+.
+.
+.
+
+
+Operador Ternário ( teste ? true : false )
+
+
+
+Módulo C - DOM - Document object Model
+
+Software - Extensão para o VSCode e para o Google Chrome
+
+>>>>>live server<<<<<<
+(Para quem chegou em 2023, o WATCH IN CHROME não existe mais. Basta instalar o LIVE SERVER, 
+depois selecionar o arquivo HTML e com o botão direito clicar na opção OPEN WITH LIVE SERVER.
+ Pronto! Não se esqueça de salvar toda vez que modificar algo (eu uso o CTRL + F5).)
+
+Elementos pode ser selecionados por:
+
+por TagName
+por ID
+por Name
+por classeName
+por querySeletor (CSS)

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color:white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inicio de estudo com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Vamos aprender a usar <strong>DOM</strong> em javaScript!</p>
+    <p>Nova linha para teste!!</p>
+    <div id="msg">Clique aqui</div>
+    <script>
+        //window.document.writeln('teste com JS')
+        //window.document.writeln(window.navigator.appName)
+        //window.document.writeln(window.document.URL)
+        
+        var p1 = window.document.getElementsByTagName('p')[0] 
+        // vai buscar o primerio paragrafo
+        //window.document.writeln(p1.innerText)
+        //p1.style.color = 'blue'
+
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'vai à volta!!'
+
+    </script>
+</body>
+</html>
