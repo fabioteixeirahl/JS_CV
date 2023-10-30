@@ -188,3 +188,43 @@ por ID
 por Name
 por classeName
 por querySeletor (CSS)
+
+
+
+>>>>>Condição simples e composta<<<<<
+if (Condição) {
+    Condição verdadeira
+} else {
+    Condição falsa
+}
+
+>>Condição encadeada
+if (Condição 1) {
+    Condição verdadeira
+} else if (condição 2){
+    Condição 1 falsa e Condição 2 verdadeira
+} else {
+    se tudo for falso
+}
+
+
+Condição Múltipla
+
+switch (expressão) {
+    case valor1:
+        .....
+        break
+    case valor2:
+        .....
+        break
+    case valor3:
+
+        break
+    default:
+        ....
+        break
+}
+
+
+
+

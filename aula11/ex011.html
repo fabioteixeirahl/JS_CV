@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Navionalidade</title>
+</head>
+<body>
+    <h1>Validar Nacionalidade</h1>
+    Qual é o seu pais: <input type="text" name="text" id="text">
+    <button type="button" id="b1" onclick="verificar()">Check!</button>
+    <div id="res"></div>
+    <script>
+        function verificar(){
+            var text = document.getElementById('text')
+            var res = document.getElementById('res')
+            
+            var word = text.value
+            res.innerHTML = `<p>Vive em <strong>${word}!</strong></p>`;
+            if (word == 'Portugal') {
+                res.innerHTML += `<p>Você é <strong>português!</strong></p>`;
+            } else {
+                res.innerHTML += `<p>Você é <strong>estrangeito!</strong></p>`;
+            }
+        
+        }
+    </script>
+</body>
+</html>
