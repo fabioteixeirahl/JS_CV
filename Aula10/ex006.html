@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos DOM</title>
     <style>
+        div#container {
+            display: flex;
+        }
+
+
         div#area {
             font: normal 20pt Arial;
             background: rgb( 42, 139, 42);
@@ -14,11 +19,24 @@
             line-height: 200px;
             text-align: center;
         }
+        div#teste {
+            margin-left: 10px;
+            font: normal 20pt Arial;
+            background: rgb(42, 139, 42);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <div id="area">
-        cenas.....
+    <div id="container">
+        <div id="area">
+            cenas.....
+        </div>
+
+        <div id="teste">xpto</div>
     </div>
     <script>
         var a = window.document.getElementById('area')

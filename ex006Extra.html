@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            font: normal 18px Arial;
+        }
+
+        div#container {
+            display: flex;
+        }
+
+
+        div#sim {
+            font: normal 20pt Arial;
+            background: rgb( 42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        div#nao {
+            margin-left: 10px;
+            font: normal 20pt Arial;
+            background: rgb(42, 139, 42);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div><h1>Tu és o André?</h1></div>
+    <div id="container">
+
+        
+
+        <div id="sim">
+            Sim
+        </div>
+
+        <div id="nao">
+            Não
+        </div>
+    </div>
+    <img src="" alt="andre" id="andre">
+    <script>
+        var sim = window.document.getElementById('sim')
+        var nao = window.document.getElementById('nao')
+        var img = window.document.getElementById('andre')
+        sim.addEventListener('click', clicar)
+        nao.addEventListener('click', clicar)
+        sim.addEventListener('mouseenter', entrarSim)
+        nao.addEventListener('mouseenter', entrarNao)
+        //sim.addEventListener('mouseout', sair)
+        var state
+        function clicar() {
+            img.src = 'andre.png'
+        }
+        function entrarSim() {
+                sim.innerText = 'Não'
+                nao.innerHTML = 'Sim'
+        }
+        function entrarNao() {
+                sim.innerText = 'Sim'
+                nao.innerHTML = 'Não'
+        }
+        function sair() {
+            //Sim.innerText = 'Saiu!'
+            //Sim.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
