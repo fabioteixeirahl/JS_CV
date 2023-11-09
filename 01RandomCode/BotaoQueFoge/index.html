@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Botão que Muda de Posição</title>
+    <style>
+        button {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="Name" id="name">
+    <button type="button" id="meuBotao" name="Verificar" onclick="mudarPosicao()">Verificar</button>
+    <script>
+        var name = document.getElementById('name')
+        var botao = document.getElementById('meuBotao');
+
+        botao.addEventListener('mouseenter', mudarPosicao)
+
+        function mudarPosicao() {
+            var novaPosicaoX = Math.random() * window.innerWidth;
+            var novaPosicaoY = Math.random() * window.innerHeight;
+            botao.style.top = novaPosicaoY + 'px';
+            botao.style.left = novaPosicaoX + 'px';
+        }
+    </script>
+</body>
+</html>

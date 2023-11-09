@@ -18,10 +18,9 @@ function run() {
         var resultado = ''
        
         for( var i = nInicio; i <= nFim; i += nPasso) {
-            resultado += i
-            console.log(resultado)
+            resultado += `${i} \u{1F449}` 
         }
 
-    res.innerHTML = resultado
+        res.innerHTML = `resultado \u{1F3C1}`
     }
 }
