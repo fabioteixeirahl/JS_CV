@@ -227,7 +227,15 @@ switch (expressão) {
 
 
 
+>>>>>>>>Array<<<<<<<<<
 
-https://www.youtube.com/watch?v=f5es-PpaUI8 
-3.46
-1
+let num = [5, 8, 4]
+num[3] = 6      --> adiciona o número 6 no indice 3
+num.push(7)     --> adiciona o número 7 na última posição
+num.length      --> devolve o tamanho do Array
+num.sort()      --> ordena do menor para o maior
+
+
+
+
+
